@@ -54,3 +54,13 @@ with DAG(
     
     
     
+'''
+from airflow import DAG
+from airflow.operators import BashOperator,S3KeySensor
+from datetime import datetime, timedelta
+import psycopg2
+from datetime import date, timedelta
+
+yesterday = date.today() - timedelta(1)
+yesterdayDate = yesterday.strftime('%Y-%m-%d')
+'''
